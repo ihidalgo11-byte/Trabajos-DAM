@@ -1,0 +1,15 @@
+.contenidor {
+color:white;
+}
+#Derecha {
+  background-color:green;
+  float:right;
+}
+#Izquierda {
+  background-color: blue;
+  float:left;
+}
+#Centro {
+  background-color:red;
+  text-align: center;
+}

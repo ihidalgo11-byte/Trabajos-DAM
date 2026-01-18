@@ -1,0 +1,42 @@
+body {
+    font-family: arial;
+}
+
+#divEsquerra {
+    border: 1px dashed black;
+    background-color: lightgrey;
+    float: left;
+    width: 33%;
+    padding: 10px;
+    margin: 10px 10px;
+    text-align: left;
+}
+
+#divDreta {
+    border: 1px dashed black;
+    background-color: lightgrey;
+    float: right;
+    width: 33%;
+    padding: 10px;
+    margin: 10px 10px;
+    text-align: right;
+}
+
+#divCentral {
+    text-align: right;
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    width: 50%;
+    margin: auto;
+}
+
+footer {
+    background-color: grey;
+    text-align: center;
+    color: white;
+    padding: 1px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}

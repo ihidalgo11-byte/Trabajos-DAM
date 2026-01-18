@@ -1,0 +1,32 @@
+table {
+    text-align: center;
+    vertical-align: middle;
+}
+table, caption {
+    border: 1px solid darkblue;
+    font-size: 14px;
+}
+th {
+    background-color: #279c90;
+    color: white;
+    text-transform:uppercase;
+}
+td:last-child {
+    font-weight: bold;
+}
+tr:nth-child(odd) {
+    background-color: darkblue;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: white;
+    color: darkblue;
+
+}
+caption:hover {
+    color: rgb(253, 16, 16);
+}
+caption::selection {
+    color: darkviolet;
+}

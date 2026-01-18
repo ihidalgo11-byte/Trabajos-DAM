@@ -1,0 +1,14 @@
+@import url(https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap);
+* {
+    background-color: lightsalmon;
+}
+h1,h2 {
+    font-family: "Rubik";
+}
+.colorVerd {
+    color: green;
+}
+#footer {
+    border: 3px green solid;
+    font-weight: bolder;
+}

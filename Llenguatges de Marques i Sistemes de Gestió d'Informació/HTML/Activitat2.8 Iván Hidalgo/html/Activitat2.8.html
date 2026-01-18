@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taula simple</title>
+    <style>
+    caption, table, td, th {
+    text-align: center;
+    vertical-align: middle;
+
+    border: 1px solid black;
+    }
+    img {
+        height: 50px;
+        width: 50px;
+    }
+    </style>
+</head>
+        <body>
+            <table>
+                <caption>PRODUCTES</caption>
+                <thead>
+                    <tr>
+                        <th>Producte</th>
+                        <th>Quantitat</th>
+                        <th>Preu</th>
+                        <th>Secció</th>
+                        <th>Imatge</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr >
+                        <td>Pomes verdes</td>
+                        <td>5</td>
+                        <td>3,5 €</td>
+                        <td rowspan="2">Fruiteria</td>
+                        <td rowspan="2"><img src="pomes.jfif"></td>
+                    </tr>
+                    <tr>
+                        <td>Pomes vermelles</td>
+                        <td>6</td>
+                        <td>2,5 €</td>
+                    </tr>
+                    <tr>
+                        <td>Llet</td>
+                        <td>6</td>
+                        <td>5,90 €</td>
+                        <td>Lactis</td>
+                        <td><img src="img/llet.jpg"></td>
+                    </tr>
+                    <tr>
+                        <td>Pa</td>
+                        <td>1</td>
+                        <td>1 €</td>
+                        <td>Forn</td>
+                        <td><img src="../image/pa.jfif"></td>
+                    </tr>
+                    <tr>
+                        <td>Pollastre sencer</td>
+                        <td>3</td>
+                        <td>15 €</td>
+                        <td>Carniseria</td>
+                        <td><img src="../pollastre.jpg"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </body>
+</html>

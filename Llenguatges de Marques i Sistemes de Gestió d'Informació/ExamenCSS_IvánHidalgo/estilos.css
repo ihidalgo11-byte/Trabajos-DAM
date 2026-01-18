@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Science+Gothic:wght@100..900&display=swap');
+body {
+    background-color:  #d4e9d5;
+}
+h1 {
+    color: #2e7d32;
+    font-family: 'Science Gothic';
+}
+h2 {
+    color: #2e7d32;
+    font-family: Arial;
+}
+main, footer {
+    font-family: Arial;
+    margin-top: 10px;
+}
+a {
+    color: #2e7d32;
+    font-weight: bold;
+    margin-left: 20px;
+}
+input {
+    display: block;
+    margin-top: 10px;
+    border: 2px #2e7d32 solid;
+    border-radius: 0.3cm;
+    width: 20.5cm;
+    height: 1cm;
+}
+select {
+    display: block;
+    margin-top: 10px;
+    border: 2px #2e7d32 solid;
+    border-radius: 0.3cm;
+    width: 20.5cm;
+    height: 1cm;
+}
+#boton {
+    background-color: #2e7d32;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+#boton:hover {
+    color: #4ac352;
+}
+section {
+    background-color: white;
+    border-radius: 0.3cm;
+    padding: 20px;
+    margin: 20px;
+}
+table {
+    border-collapse: collapse;
+    text-align: center;
+}
+table th {
+    background-color:  #2e7d32;
+    color: white;
+    height: 1cm;
+    width: 10cm;
+}
+table td {
+    background-color: #f5f5f5;
+    border: 2px #ddd solid;
+    height: 1cm;
+    width: 10cm;
+}
+details {
+    margin-top: 10px;
+}

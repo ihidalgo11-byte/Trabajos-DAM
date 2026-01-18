@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Pagina Web</title>
+    <style>
+        form label { display: block;}
+        form input,
+        textarea,
+        form button { display: block; width: 100%; max-width: 300px;}
+    </style>
+</head>
+        <body>
+            <h1>Formulario de Registro</h1>
+            <form action="Segunda Pagina.html" target="_blank">
+                <label>
+                    Nom:
+                    <input type="text" name="Nom"required>
+                    Edad:
+                    <input type="number" min="18" name="Edad"required>
+                    Correu electrònic:
+                    <input type="email" name="Correu"required>
+                    Contrasenya:
+                    <input type="password" min="6" max="12" name="Contrasenya"required>
+                    <h3>Consoles favorites:</h3>
+                    <select name="tiposConsolas" multiple size="9">
+                        <optgroup label="Consoles de casa">
+                            <option>PS5</option>
+                            <option>PS4</option>
+                            <option>Xbox Series X</option>
+                            <option>Xbox Series S</option>
+                            <option>Xbox One</option>
+                        </optgroup>
+                        <optgroup label="Consoles Portàtils">
+                            <option>Nintendo Switch 2</option>
+                            <option>Nintendo Switch</option>
+                            <option>Nintendo Switch Lite</option>
+                        </optgroup>
+                    </select>
+                </label>
+                <label>
+                    Castellà
+                    <input type="radio" name="idioma" id="idiomaCastella">
+                    Català
+                    <input type="radio" name="idioma" id="idiomaCatala">
+                    Anglès
+                    <input type="radio" name="idioma" id="idiomaAngles">
+                    Notificacions per correu electrònic:
+                    <input type="checkbox">
+                    Comentari:
+                    <textarea cols="50" rows="7" name="comentario"></textarea>
+                    <input type="submit" value="Enviar">  
+                </label>
+            </form>
+
+
+        </body>
+</html>
