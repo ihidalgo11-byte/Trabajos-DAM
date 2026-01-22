@@ -31,11 +31,11 @@ public class Illa {
         this.index = 0;
         this.respuestas = respuestas;
         this.insultos = insultos;
-        while (index < mida - 1) { // Genera y guarda piratas normales en el array hasta la penúltima posicion
+        while (index < mida - 1) { // Genera la cantidad de piratas que hay en la isla y los guarda en el array
             this.nombres =  random.nextInt(0,6);
             arrayPiratas[index] = new Pirata(insultos, respuestas, this.piratas[nombres], random.nextInt(1,3));
             index++;
-            } // En la última posición del array se genera LeChuck,
+            }
             arrayPiratas[mida - 1] = new LeChuck(insultos, respuestas, random.nextInt(2,6));
         }
 

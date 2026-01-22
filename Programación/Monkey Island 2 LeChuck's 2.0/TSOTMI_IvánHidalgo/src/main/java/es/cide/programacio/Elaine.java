@@ -12,7 +12,7 @@ public class Elaine extends Heroi {
     }
 
     @Override
-    public void defensar() { //Imprime todas las respuestas por pantalla y pide que el usuario elija una
+    public void defensar() {
         for (int i = 0; i < respuestas.length; i++) {
             System.out.println((i + 1) + "." + this.respuestas[i]);
         }
@@ -40,7 +40,7 @@ public class Elaine extends Heroi {
 
     @Override
     public void sayGoodBye() {
-        System.out.println("Elaine: No pensé que el mar sería mi tumba… pero al menos luché hasta el final.");
+        System.out.println("Elaine: Que tu rumbo sea justo y tus actos, responsables.");
     }
 
 }

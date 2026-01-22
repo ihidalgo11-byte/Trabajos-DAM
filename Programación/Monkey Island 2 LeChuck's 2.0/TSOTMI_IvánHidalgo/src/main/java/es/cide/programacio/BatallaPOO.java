@@ -19,7 +19,7 @@ public class BatallaPOO {
             "Entonces la tuya era el kraken: fea, gorda y siempre hundiendo barcos.",
             "Entonces ya debe olerte familiar.",
             "Y tú eres tan insignificante que ni el terremoto que provoca tu madre podría despertarte.",
-            "Mi abuela lanza amenazas más temibles y está muerta."
+            "Mi abuela lanza amenazas más temibles… y está muerta."
         };
         String insultos[] = {
             "¡Si luchas cara a cara conmigo necesitarás un consejero!",
@@ -42,13 +42,13 @@ public class BatallaPOO {
         Heroi h;
         Pirata p;
         int heroe = sc.nextInt();
-        if (heroe == 1) { // Selecciona uno de los 2 heroes
+        if (heroe == 1) {
             h = new Elaine(respuestas);
         } else {
             h = new Guybrush(respuestas);
         }
         
-        System.out.println(h.getNombre() + " llega a la isla " + i.getNombreIlla() + " en la que hay " + i.getCantidadPiratas() + " piratas.");
+        System.out.println("El heroe " + h.getNombre() + " llega a la isla " + i.getNombreIlla() + " en la que hay " + i.getCantidadPiratas() + " piratas.");
         System.out.println("");
         for (int bucle = 0; bucle < i.getCantidadPiratas(); bucle++) { // Bucle for para luchar con todos los piratas
             p = i.vullUnPirata(bucle); // Asigna un nuevo pirata vivo
@@ -77,9 +77,9 @@ public class BatallaPOO {
                     System.out.println("Incorrecto");
                     h.vida();
                 }
-                if (!p.getVivoPirata()) { // Si el pirata muere se despide
+                if (!p.getVivoPirata()) {
                     p.sayGoodBye();
-                } else if (!h.getVivo()) { // Si el heroe muere se despide
+                } else if (!h.getVivo()) {
                     h.sayGoodBye();
                 }
             }

@@ -30,7 +30,7 @@ public abstract class Heroi extends Personatge implements Fight, Speak {
         return this.nom;
     }
 
-    public String getRes() { //Getter de la respuesta guardada en los heroes
+    public String getRes() {
         return res2;
     }
 

@@ -11,7 +11,7 @@ public class Guybrush extends Heroi {
     public Guybrush(String respuestas[]) {
         super(respuestas, "Guybrush", 10);
         vivo = true;
-        this.respuestasRandom = new String[4]; //Array que guarda las respuestas
+        this.respuestasRandom = new String[4];
 
     }
 
@@ -32,7 +32,7 @@ public class Guybrush extends Heroi {
             System.out.println((i + 1) + ". " + respuestasRandom[i]);
         }
         int resElegida = sc.nextInt();
-        res2 = respuestasRandom[resElegida - 1]; // Guarda el la varible heredada la eleccion del usuario -1
+        res2 = respuestasRandom[resElegida - 1];
     }
 
     @Override

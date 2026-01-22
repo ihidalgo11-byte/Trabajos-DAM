@@ -10,16 +10,15 @@ public class Pirata extends Personatge implements Fight, Speak {
     // Atributos
     private String insultos[];
     private String respuestas[];
-    protected boolean vivo;
+    private boolean vivo = true;
     private String[] insultosPropios = new String[3]; // Array de 3 espacios que guarda los insultos del pirata
     private String[] respuestasCorrectas = new String[3]; // Array que guarda las respuestas a los insultos del pirata
     private int insulto1, insulto2, insulto3;
-    protected int posicion;
+    private int posicion;
 
     // Constructor
     public Pirata(String insultos[], String respuestas[], String nom, int vida) {
         super(nom, vida);
-        this.vivo = true;
         this.insultos = insultos;
         this.respuestas = respuestas;
         this.insulto1 = random.nextInt(insultos.length); // Genera un numero aleatorio que indica la posicion del insulto
@@ -75,12 +74,10 @@ public class Pirata extends Personatge implements Fight, Speak {
         return this.vivo;
     }
 
-    @Override
     public void sayHello() {
         System.out.println(getNombrePirata() + ": Mira quién se atreve a poner un pie en estas aguas…");
     }
 
-    @Override
     public void sayGoodBye() {
         System.out.println(getNombrePirata() + ": ¡Juro… que… volveré… como fantasma!");
     }
