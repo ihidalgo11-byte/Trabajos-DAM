@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+        <body>
+            <header>
+                <h1>Llibreria CIDE</h1>
+                <h2>Valoració del llibre finalista del Premi Planeta 2025</h2>
+                <p>En aquesta pàgina pots consultar informació sobre el llibre finalista del Premi Planeta i deixar la teva Valoració com a lector o lectora.</p>
+            </header>
+            <main>
+                <details>
+                    <summary>Veure informació del finalista</summary>
+                    <p><b>Títol:</b> Cuando el viento hable</p>
+                    <p><b>Autora:</b> Ángela Banzas</p>
+                    <p><b>Premi:</b> Finalista del Premi Planeta 2025</p>
+                    <p><b>Descripció:</b> Novel·la ambientada a la Galícia rural que explora secrets familiars i memòria col·lectiva a través de la historia d'una nina nascuda a la postguerra i criada pels seus avis.</p>
+                </details>
+                <h2>Deixa la teva valoració</h2>
+                <form >
+                    <label>
+                        Nom:
+                        <input type="text"required>
+                    </label>
+                    <label>
+                        Correu electrònic:
+                        <input type="email"required>
+                    </label>
+                    <p>Valoració (1 = Molt dolenta, 5 = Excel·lent):</p>
+                    <input id="a" type="range" min="1" max="5" required>
+                </form>
+                <label>
+                    La teva opinio:
+                <textarea cols="79" rows="5" placeholder="Escriu aqui el teu comentari..."></textarea>
+                </label>
+                <input id="Enviar" type="submit" value="Enviar valoració">
+                <h2>Opinions d'altres lectors</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nom</th>
+                            <th>Valoració</th>
+                            <th>Comentari</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Laura</td>
+                            <td>5</td>
+                            <td>Una història preciosa, molt emocionant.</td>
+                        </tr>
+                        <tr>
+                            <td>Marc</td>
+                            <td>5</td>
+                            <td>Una història preciosa, molt emocionant.</td>
+                        </tr>
+                        <tr>
+                            <td>Laura</td>
+                            <td>5</td>
+                            <td>Una història preciosa, molt emocionant.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </main>
+        </body>
+</html>

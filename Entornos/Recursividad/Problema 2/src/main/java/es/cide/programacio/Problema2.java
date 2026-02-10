@@ -8,7 +8,7 @@ public class Problema2 {
         System.out.println(reduction_of_digits(n));
     }
     public static int reduction_of_digits(int n) {
-        if (n <= 9) {
+        if (n < 10) {
             return n;
         }
         return reduction_of_digits((n/10)+(n%10));

@@ -37,3 +37,13 @@ SELECT nombre, precio FROM producto ORDER BY PRECIO DESC;
 SELECT nombre, precio FROM producto ORDER BY precio DESC FETCH FIRST 3 ROWS ONLY;
 SELECT nombre, precio FROM producto ORDER BY precio ASC OFFSET 1 ROWS FETCH FIRST 3 ROWS ONLY;
 SELECT nombre FROM producto WHERE nombre LIKE '%Impresora%'
+
+SELECT id_fabricante count FROM producto GROUP BY id_fabricante;
+SELECT id_fabricante, AVG(precio) FROM producto GROUP BY id_fabricante;
+SELECT nombre, round(precio) FROM producto;
+SELECT nombre, precio*1.10 from producto;
+
+
+
+
+
