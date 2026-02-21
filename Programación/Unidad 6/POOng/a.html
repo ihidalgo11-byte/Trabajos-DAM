@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Coordenadas del Ratón</title>
+  <style>
+    body { font-family: sans-serif; height: 100vh; margin: 0; display: flex; justify-content: center; align-items: center; background: #f0f0f0; }
+    #coords { font-size: 2em; }
+  </style>
+</head>
+<body>
+  <div id="coords">Mueve el ratón</div>
+  <script>
+    document.addEventListener('mousemove', (e) => {
+      document.getElementById('coords').textContent = `X: ${e.clientX}, Y: ${e.clientY}`;
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+        <body>
+            <script>
+                    let nota1,nota2,nota3suma,media;
+                    nota1 = Number(prompt('Introduce la nota 1:'));
+                    nota2 = Number(prompt('Introduce la nota 2:'));
+                    nota3 = Number(prompt('Introduce la nota 3:'));
+                    media = (nota1 + nota2 + nota3)/3;
+                    console.log(media);
+                    if (media < 5) {
+                        console.log("Suspès");
+                    } else if (media <=5 && media < 7) {
+                        console.log("Aprovat");
+                    } else if (media <=7 && media < 9) {
+                        console.log("Notable");
+                    } else {
+                        console.log("Excel·lent");
+                    }
+            </script>
+        </body>
+</html>

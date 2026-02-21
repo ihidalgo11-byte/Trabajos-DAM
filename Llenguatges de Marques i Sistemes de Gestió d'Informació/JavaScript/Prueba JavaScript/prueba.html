@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iván Hidalgo Montalvo</title>
+</head>
+        <body>
+            <script type="text/javascript">
+                var numEmpleados = parseInt(prompt("Introduce el numero de empleados"));
+                var bono = 0;
+                document.write("<h2>Tabla de empleados</h2>");
+                document.write("<table border='1'");
+                document.write("<tr><th bgcolor='red'>NOMBRE</th><th bgcolor='red'>DEPARTAMENTO</th><th bgcolor='red'>SALARIO BASE</th><th bgcolor='red'>BONIFICACION</th><th bgcolor='red'>SALARIO TOTAL</th></tr>");
+                for (i = 1; i <= numEmpleados; i++) // Bucle que depende del numero de empleados
+                    {
+                        var nombre = prompt("Introduce el nombre del empleado").toUpperCase();
+                        var departamento = prompt ("Introduce el departamento del empleado").toUpperCase();
+                        while (departamento != "INF" && departamento !="RRHH")
+                            {
+                                departamento = prompt("El departamento es incorrecto vuelve a introducirlo (INF o RRHH)").toUpperCase();
+                            }
+                        switch (departamento)
+                            {
+                                case "RRHH":
+                                    salario = 1200;
+                                    break;
+                                case "INF":
+                                    salario = 1500;
+                                    break;
+                            }
+                            // Depende el departamento el salario es 1200€ o 1500€
+                        if (departamento == "RRHH")
+                            {
+                                departamento = "Recursos humanos";
+                            }
+                        if (departamento == "INF")
+                            {
+                                departamento = "Informática";
+                            }
+                            //Si es RRHH que en la tabla ponga Recursos humanos 
+                        bono = parseInt(prompt("Introduce la bonificación"));
+                        while (bono < 0)
+                            {
+                                bono = parseInt(prompt("Introduce la bonificación en positivo"));
+                            }
+                        var salario_total = salario + bono;
+                         
+                        document.write("<tr><th>"+nombre+"</th><th>"+departamento+"</th><th>"+salario+"</th><th>"+bono+"</th><th>"+salario_total+"</th><tr>");
+                    }
+                    var salario_medio
+                    //No va la media
+                    document.write("La media salarial es de: "+salario_medio+" euros<br><br>");
+            </script>
+        </body>
+</html>
